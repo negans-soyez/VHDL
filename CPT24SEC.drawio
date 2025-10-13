@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.5">
   <diagram name="Page-1" id="n1vG-a2Mxv8iqi264H9m">
-    <mxGraphModel dx="1603" dy="811" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="651" dy="329" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -397,15 +397,6 @@
         <mxCell id="DVobUFfQzRsEQ04qU32B-89" value="1&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;0&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="DVobUFfQzRsEQ04qU32B-86">
           <mxGeometry x="30" y="30" width="10" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="DVobUFfQzRsEQ04qU32B-90" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="DVobUFfQzRsEQ04qU32B-84" target="DVobUFfQzRsEQ04qU32B-87">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="630" y="487.5" as="sourcePoint" />
-            <mxPoint x="680" y="437.5" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="685" y="447.5" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="DVobUFfQzRsEQ04qU32B-91" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="DVobUFfQzRsEQ04qU32B-108">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1070" y="322.23" as="sourcePoint" />
@@ -774,23 +765,6 @@
         <mxCell id="DVobUFfQzRsEQ04qU32B-179" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.inverter_2;rotation=-180;" vertex="1" parent="1">
           <mxGeometry x="779" y="442.5" width="20" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="DVobUFfQzRsEQ04qU32B-181" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="DVobUFfQzRsEQ04qU32B-182" target="DVobUFfQzRsEQ04qU32B-179">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="720" y="500" as="sourcePoint" />
-            <mxPoint x="770" y="450" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="DVobUFfQzRsEQ04qU32B-183" value="" style="endArrow=none;html=1;rounded=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="DVobUFfQzRsEQ04qU32B-87" target="DVobUFfQzRsEQ04qU32B-182">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="685" y="378" as="sourcePoint" />
-            <mxPoint x="779" y="448" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="DVobUFfQzRsEQ04qU32B-182" value="" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;" vertex="1" parent="1">
-          <mxGeometry x="675" y="437.5" width="20" height="20" as="geometry" />
-        </mxCell>
         <mxCell id="DVobUFfQzRsEQ04qU32B-184" value="" style="endArrow=none;html=1;rounded=0;exitDx=0;exitDy=0;exitX=0;exitY=0.5;exitPerimeter=0;" edge="1" parent="1" source="DVobUFfQzRsEQ04qU32B-179" target="DVobUFfQzRsEQ04qU32B-185">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="850" y="440" as="sourcePoint" />
@@ -837,6 +811,28 @@
         </mxCell>
         <mxCell id="DVobUFfQzRsEQ04qU32B-192" value="" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;" vertex="1" parent="1">
           <mxGeometry x="940" y="387.5" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DVobUFfQzRsEQ04qU32B-196" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="DVobUFfQzRsEQ04qU32B-194" target="DVobUFfQzRsEQ04qU32B-84">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="678" y="448" />
+              <mxPoint x="576" y="448" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DVobUFfQzRsEQ04qU32B-194" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.logic_gate;operation=or;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="660" y="405" width="50" height="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="DVobUFfQzRsEQ04qU32B-195" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" edge="1" parent="1" source="DVobUFfQzRsEQ04qU32B-87" target="DVobUFfQzRsEQ04qU32B-194">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DVobUFfQzRsEQ04qU32B-197" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" edge="1" parent="1" source="DVobUFfQzRsEQ04qU32B-194" target="DVobUFfQzRsEQ04qU32B-179">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="692" y="448" />
+              <mxPoint x="739" y="448" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
