@@ -63,7 +63,7 @@
             <mxGeometry height="30" width="110" x="305" y="860" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="4d2N35XxTM7zyosQTTk9-248" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-82">
+        <mxCell id="4d2N35XxTM7zyosQTTk9-249" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-82">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="Creer pthread pour player_movement_thread avec player_id" id="4d2N35XxTM7zyosQTTk9-80" parent="main_loop_players" shape="rectangle" placeholders="1">
@@ -71,19 +71,12 @@
             <mxGeometry height="30" width="340" x="190" y="910" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="If pthread_create failed then print error free player_id and exit" id="4d2N35XxTM7zyosQTTk9-81" parent="main_loop_players" shape="diamond" placeholders="1">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="350" x="340" y="1090" as="geometry" />
-          </mxCell>
-        </UserObject>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-252" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-251">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <UserObject label="Creer pthread powerup_thread pour powerup_spawner_thread" id="4d2N35XxTM7zyosQTTk9-82" parent="main" shape="rectangle" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
             <mxGeometry height="30" width="350" x="185" y="970" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="If powerup thread creation failed then print error and exit" id="4d2N35XxTM7zyosQTTk9-83" parent="main" shape="diamond" placeholders="1">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="320" x="10" y="1070" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="Call cleanup_game()" id="4d2N35XxTM7zyosQTTk9-84" parent="main" shape="rectangle" placeholders="1">
@@ -845,6 +838,9 @@
         </mxCell>
         <mxCell id="4d2N35XxTM7zyosQTTk9-239" parent="1" style="whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#FFFFFF;" value="&lt;font style=&quot;&quot;&gt;print error and exit&lt;/font&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="630" y="745" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-251" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;If pthread_create failed then print error free player_id and exit&lt;/font&gt;" vertex="1">
+          <mxGeometry height="140" width="385" x="167.5" y="1029" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
