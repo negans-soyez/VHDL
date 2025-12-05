@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.4">
   <diagram name="Page-1" id="Sr3MLf4RLO3qVzRuOpbn">
-    <mxGraphModel dx="1097" dy="555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1158" dy="586" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -140,19 +140,25 @@
             <mxGeometry height="30" width="190" x="985" y="330" as="geometry" />
           </mxCell>
         </UserObject>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-265" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <UserObject label="Set game_state.num_players = num_players" id="4d2N35XxTM7zyosQTTk9-92" parent="init" shape="rectangle" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
             <mxGeometry height="30" width="260" x="950" y="400" as="geometry" />
           </mxCell>
         </UserObject>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-266" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <UserObject label="Set game_state.num_powerups = 0" id="4d2N35XxTM7zyosQTTk9-93" parent="init" shape="rectangle" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="210" x="960" y="470" as="geometry" />
+            <mxGeometry height="30" width="210" x="975" y="470" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="Set game_state.turn_count = 0" id="4d2N35XxTM7zyosQTTk9-94" parent="init" shape="rectangle" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="190" x="960" y="540" as="geometry" />
+            <mxGeometry height="30" width="190" x="985" y="540" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="Set game_state.game_over = 0" id="4d2N35XxTM7zyosQTTk9-95" parent="init" shape="rectangle" placeholders="1">
