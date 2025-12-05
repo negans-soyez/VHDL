@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.4">
   <diagram name="Page-1" id="Sr3MLf4RLO3qVzRuOpbn">
-    <mxGraphModel dx="947" dy="479" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="802" dy="405" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -99,7 +99,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="Join powerup_thread with pthread_join" id="4d2N35XxTM7zyosQTTk9-86" parent="main" shape="rectangle" placeholders="1">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
             <mxGeometry height="30" width="230" x="245" y="1290" as="geometry" />
           </mxCell>
         </UserObject>
@@ -107,12 +107,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="Print Game simulation completed successfully" id="4d2N35XxTM7zyosQTTk9-87" parent="main" shape="rectangle" placeholders="1">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
             <mxGeometry height="30" width="270" x="225" y="1350" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="Return 0 from main" id="4d2N35XxTM7zyosQTTk9-88" parent="main" shape="ellipse" placeholders="1">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
             <mxGeometry height="30" width="130" x="295" y="1410" as="geometry" />
           </mxCell>
         </UserObject>
