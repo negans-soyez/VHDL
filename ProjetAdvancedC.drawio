@@ -33,7 +33,7 @@
         </UserObject>
         <UserObject label="Appeler display_game_grid() et print_player_status()" id="4d2N35XxTM7zyosQTTk9-75" parent="main" shape="rectangle" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="315" x="215" y="520" as="geometry" />
+            <mxGeometry height="30" width="315" x="202.5" y="520" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="Loop i from 0 to num_players - 1" id="4d2N35XxTM7zyosQTTk9-76" parent="main" shape="rectangle" placeholders="1">
