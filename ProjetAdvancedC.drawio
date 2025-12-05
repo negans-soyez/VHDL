@@ -35,7 +35,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="Appeler display_game_grid() et print_player_status()" id="4d2N35XxTM7zyosQTTk9-75" parent="main" shape="rectangle" placeholders="1">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
             <mxGeometry height="30" width="315" x="202.5" y="520" as="geometry" />
           </mxCell>
         </UserObject>
@@ -43,14 +43,14 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="Loop i de 0 à num_players - 1" id="4d2N35XxTM7zyosQTTk9-76" parent="main" shape="rectangle" placeholders="1">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
             <mxGeometry height="30" width="200" x="260" y="590" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-238" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-236">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <UserObject label="Allocate int* player_id via malloc" id="4d2N35XxTM7zyosQTTk9-77" parent="main_loop_players" shape="rectangle" placeholders="1">
+        <UserObject label="Allouer int* player_id via malloc" id="4d2N35XxTM7zyosQTTk9-77" parent="main_loop_players" shape="rectangle" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
             <mxGeometry height="30" width="200" x="260" y="660" as="geometry" />
           </mxCell>
@@ -802,7 +802,7 @@
         <mxCell id="4d2N35XxTM7zyosQTTk9-234" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-230" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-75">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4d2N35XxTM7zyosQTTk9-230" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Si : initialize_game returns error&amp;nbsp;" vertex="1">
+        <mxCell id="4d2N35XxTM7zyosQTTk9-230" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="Si : initialize_game returns error&amp;nbsp;" vertex="1">
           <mxGeometry height="110" width="210" x="255" y="380" as="geometry" />
         </mxCell>
         <mxCell id="4d2N35XxTM7zyosQTTk9-232" parent="1" style="whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="exit avec code 1" vertex="1">
