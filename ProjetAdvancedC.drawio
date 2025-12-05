@@ -83,7 +83,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="Call cleanup_game()" id="4d2N35XxTM7zyosQTTk9-84" parent="main" shape="rectangle" placeholders="1">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
             <mxGeometry height="30" width="130" x="295" y="1170" as="geometry" />
           </mxCell>
         </UserObject>
@@ -91,7 +91,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="Cancel powerup_thread with pthread_cancel" id="4d2N35XxTM7zyosQTTk9-85" parent="main" shape="rectangle" placeholders="1">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
             <mxGeometry height="30" width="260" x="230" y="1230" as="geometry" />
           </mxCell>
         </UserObject>
@@ -867,7 +867,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4d2N35XxTM7zyosQTTk9-251" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;If pthread_create failed&amp;nbsp;&lt;/font&gt;" vertex="1">
+        <mxCell id="4d2N35XxTM7zyosQTTk9-251" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Si pthread_create failed&amp;nbsp;&lt;/font&gt;" vertex="1">
           <mxGeometry height="109" width="242.5" x="238.75" y="1031" as="geometry" />
         </mxCell>
         <mxCell id="4d2N35XxTM7zyosQTTk9-253" parent="1" style="whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" value="print error free player_id and exit" vertex="1">
