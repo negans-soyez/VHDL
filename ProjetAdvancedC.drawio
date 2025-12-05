@@ -1,9 +1,119 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.4">
   <diagram name="Page-1" id="Sr3MLf4RLO3qVzRuOpbn">
-    <mxGraphModel>
+    <mxGraphModel dx="1737" dy="878" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <UserObject label="%Name%" ID="start" Name="Start" Style="shape=terminator;" Source=" " Target="init_game" placeholders="1" id="4d2N35XxTM7zyosQTTk9-1">
+          <mxCell parent="1" style="shape=terminator;" vertex="1">
+            <mxGeometry height="30" width="50" x="1030" y="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%Name%" ID="init_game" Name="Initialize game (players" Style=" mutexes" Source=" powerup array)" Target="shape=process;" undefined="spawn_threads" placeholders="1" id="4d2N35XxTM7zyosQTTk9-2">
+          <mxCell parent="1" style=" mutexes" vertex="1">
+            <mxGeometry height="30" width="150" x="20" y="90" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%Name%" ID="spawn_threads" Name="Spawn threads (players + powerup spawner)" Style="shape=process;" Source="init_game" Target="player_loop" placeholders="1" id="4d2N35XxTM7zyosQTTk9-3">
+          <mxCell parent="1" style="shape=process;" vertex="1">
+            <mxGeometry height="30" width="260" x="850" y="120" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%Name%" ID="spawn_threads2" Name="Power-up spawner thread" Style="shape=subroutine;" Source="spawn_threads" Target="powerup_spawn_loop" placeholders="1" id="4d2N35XxTM7zyosQTTk9-4">
+          <mxCell parent="1" style="shape=subroutine;" vertex="1">
+            <mxGeometry height="30" width="160" x="20" y="230" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%Name%" ID="player_loop" Name="Player thread loop" Style="shape=process;" Source="spawn_threads" Target="move_player" placeholders="1" id="4d2N35XxTM7zyosQTTk9-5">
+          <mxCell parent="1" style="shape=process;" vertex="1">
+            <mxGeometry height="30" width="120" x="1000" y="1280" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%Name%" ID="powerup_spawn_loop" Name="Power-up loop (sleep + spawn)" Style="shape=process;" Source="spawn_threads2" Target="spawn_powerup" placeholders="1" id="4d2N35XxTM7zyosQTTk9-6">
+          <mxCell parent="1" style="shape=process;" vertex="1">
+            <mxGeometry height="30" width="190" x="20" y="370" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%Name%" ID="move_player" Name="Move player (random direction + bounds)" Style="shape=process;" Source="player_loop" Target="check_collisions" placeholders="1" id="4d2N35XxTM7zyosQTTk9-7">
+          <mxCell parent="1" style="shape=process;" vertex="1">
+            <mxGeometry height="30" width="240" x="300" y="600" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%Name%" ID="check_collisions" Name="Collisions (battle / power-up pickup)" Style="shape=decision;" Source="move_player" Target="update_health" placeholders="1" id="4d2N35XxTM7zyosQTTk9-8">
+          <mxCell parent="1" style="shape=decision;" vertex="1">
+            <mxGeometry height="30" width="210" x="910" y="1150" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%Name%" ID="update_health" Name="Update health and flags" Style="shape=process;" Source="check_collisions" Target="display_grid" placeholders="1" id="4d2N35XxTM7zyosQTTk9-9">
+          <mxCell parent="1" style="shape=process;" vertex="1">
+            <mxGeometry height="30" width="150" x="210" y="600" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%Name%" ID="display_grid" Name="Display grid + status" Style="shape=process;" Source="update_health" Target="turn_increment" placeholders="1" id="4d2N35XxTM7zyosQTTk9-10">
+          <mxCell parent="1" style="shape=process;" vertex="1">
+            <mxGeometry height="30" width="130" x="910" y="1000" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%Name%" ID="turn_increment" Name="Increment turn counter" Style="shape=process;" Source="display_grid" Target="check_end" placeholders="1" id="4d2N35XxTM7zyosQTTk9-11">
+          <mxCell parent="1" style="shape=process;" vertex="1">
+            <mxGeometry height="30" width="140" x="170" y="470" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%Name%" ID="check_end" Name="Player dead? set game_over" Style="shape=decision;" Source="turn_increment" Target="player_sleep" placeholders="1" id="4d2N35XxTM7zyosQTTk9-12">
+          <mxCell parent="1" style="shape=decision;" vertex="1">
+            <mxGeometry height="30" width="180" x="850" y="870" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%Name%" ID="player_sleep" Name="Sleep (tick delay)" Style="shape=process;" Source="check_end" Target="player_loop" placeholders="1" id="4d2N35XxTM7zyosQTTk9-13">
+          <mxCell parent="1" style="shape=process;" vertex="1">
+            <mxGeometry height="30" width="120" x="330" y="470" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%Name%" ID="spawn_powerup" Name="Spawn power-up at random free cell" Style="shape=process;" Source="powerup_spawn_loop" Target="powerup_spawn_loop" placeholders="1" id="4d2N35XxTM7zyosQTTk9-14">
+          <mxCell parent="1" style="shape=process;" vertex="1">
+            <mxGeometry height="30" width="220" x="20" y="930" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%Name%" ID="cleanup" Name="Join threads + destroy mutexes" Style="shape=process;" Source="check_end" Target="end" placeholders="1" id="4d2N35XxTM7zyosQTTk9-15">
+          <mxCell parent="1" style="shape=process;" vertex="1">
+            <mxGeometry height="30" width="190" x="20" y="380" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%Name%" ID="end" Name="End" Style="shape=terminator;" Source="cleanup" Target="" placeholders="1" id="4d2N35XxTM7zyosQTTk9-16">
+          <mxCell parent="1" style="shape=terminator;" vertex="1">
+            <mxGeometry height="30" width="40" x="20" y="1070" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-17" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-3" style="curved=1;rounded=1;" target="4d2N35XxTM7zyosQTTk9-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-18" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-7" style="curved=1;rounded=1;" target="4d2N35XxTM7zyosQTTk9-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-19" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-8" style="curved=1;rounded=1;" target="4d2N35XxTM7zyosQTTk9-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-20" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-9" style="curved=1;rounded=1;" target="4d2N35XxTM7zyosQTTk9-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-21" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-10" style="curved=1;rounded=1;" target="4d2N35XxTM7zyosQTTk9-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-22" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-11" style="curved=1;rounded=1;" target="4d2N35XxTM7zyosQTTk9-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-23" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-12" style="curved=1;rounded=1;" target="4d2N35XxTM7zyosQTTk9-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-24" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-13" style="curved=1;rounded=1;" target="4d2N35XxTM7zyosQTTk9-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-25" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-14" style="curved=1;rounded=1;" target="4d2N35XxTM7zyosQTTk9-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-26" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-15" style="curved=1;rounded=1;" target="4d2N35XxTM7zyosQTTk9-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
