@@ -1,35 +1,31 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.4">
   <diagram name="Page-1" id="Sr3MLf4RLO3qVzRuOpbn">
-    <mxGraphModel dx="1895" dy="958" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="834" dy="422" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="4d2N35XxTM7zyosQTTk9-68" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Organigramme :&amp;nbsp;&lt;/font&gt;&lt;/b&gt;" vertex="1">
           <mxGeometry height="30" width="200" x="10" y="40" as="geometry" />
         </mxCell>
-        <UserObject label="Program Start" id="4d2N35XxTM7zyosQTTk9-69" parent="" shape="ellipse" placeholders="1">
+        <mxCell id="4d2N35XxTM7zyosQTTk9-228" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Seed RNG avec time(NULL)" id="4d2N35XxTM7zyosQTTk9-71" parent="main" shape="rectangle" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="100" x="10" y="90" as="geometry" />
+            <mxGeometry height="30" width="170" x="275" y="200" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="main() Entry Point" id="4d2N35XxTM7zyosQTTk9-70" parent="start" shape="rectangle" placeholders="1">
+        <mxCell id="4d2N35XxTM7zyosQTTk9-229" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Mettre num_players = 3" id="4d2N35XxTM7zyosQTTk9-72" parent="main" shape="rectangle" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="120" x="10" y="160" as="geometry" />
+            <mxGeometry height="30" width="130" x="295" y="260" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="Seed RNG with time(NULL)" id="4d2N35XxTM7zyosQTTk9-71" parent="main" shape="rectangle" placeholders="1">
+        <UserObject label="Appeler initialize_game(num_players)" id="4d2N35XxTM7zyosQTTk9-73" parent="main" shape="rectangle" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="170" x="10" y="230" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="Set num_players = 3" id="4d2N35XxTM7zyosQTTk9-72" parent="main" shape="rectangle" placeholders="1">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="130" x="10" y="300" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="Call initialize_game(num_players)" id="4d2N35XxTM7zyosQTTk9-73" parent="main" shape="rectangle" placeholders="1">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="200" x="10" y="370" as="geometry" />
+            <mxGeometry height="30" width="220" x="250" y="320" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="If initialize_game returns error then exit with code 1" id="4d2N35XxTM7zyosQTTk9-74" parent="main" shape="diamond" placeholders="1">
@@ -792,6 +788,12 @@
             <mxGeometry height="30" width="180" x="10" y="11010" as="geometry" />
           </mxCell>
         </UserObject>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-227" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-226" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-226" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Program Start" vertex="1">
+          <mxGeometry height="80" width="120" x="300" y="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
