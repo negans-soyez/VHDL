@@ -793,7 +793,7 @@
         <mxCell id="4d2N35XxTM7zyosQTTk9-227" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-226" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-71">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4d2N35XxTM7zyosQTTk9-226" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Program Start" vertex="1">
+        <mxCell id="4d2N35XxTM7zyosQTTk9-226" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="Program Start" vertex="1">
           <mxGeometry height="80" width="120" x="300" y="80" as="geometry" />
         </mxCell>
         <mxCell id="4d2N35XxTM7zyosQTTk9-233" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-230" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4d2N35XxTM7zyosQTTk9-232" value="">
@@ -805,10 +805,10 @@
         <mxCell id="4d2N35XxTM7zyosQTTk9-230" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Si : initialize_game returns error&amp;nbsp;" vertex="1">
           <mxGeometry height="110" width="210" x="255" y="380" as="geometry" />
         </mxCell>
-        <mxCell id="4d2N35XxTM7zyosQTTk9-232" parent="1" style="whiteSpace=wrap;html=1;" value="exit avec code 1" vertex="1">
+        <mxCell id="4d2N35XxTM7zyosQTTk9-232" parent="1" style="whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="exit avec code 1" vertex="1">
           <mxGeometry height="60" width="120" x="590" y="405" as="geometry" />
         </mxCell>
-        <mxCell id="4d2N35XxTM7zyosQTTk9-236" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="If malloc failed then print error and exit" vertex="1">
+        <mxCell id="4d2N35XxTM7zyosQTTk9-236" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" value="If malloc failed then print error and exit" vertex="1">
           <mxGeometry height="110" width="250" x="235" y="720" as="geometry" />
         </mxCell>
       </root>
