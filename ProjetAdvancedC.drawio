@@ -118,7 +118,7 @@
         </UserObject>
         <UserObject label="initialize_game(num_players)" id="4d2N35XxTM7zyosQTTk9-89" parent="main_call_init" shape="rectangle" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="180" x="10" y="1490" as="geometry" />
+            <mxGeometry height="30" width="180" x="270" y="1470" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="Check if num_players is between 1 and MAX_PLAYERS" id="4d2N35XxTM7zyosQTTk9-90" parent="init" shape="diamond" placeholders="1">
