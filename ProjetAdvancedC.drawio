@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.4">
   <diagram name="Page-1" id="Sr3MLf4RLO3qVzRuOpbn">
-    <mxGraphModel dx="1303" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1895" dy="958" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="4d2N35XxTM7zyosQTTk9-68" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Organigramme :&amp;nbsp;&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="30" width="200" x="10" y="310" as="geometry" />
+          <mxGeometry height="30" width="200" x="10" y="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
