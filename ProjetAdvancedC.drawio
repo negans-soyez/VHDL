@@ -79,29 +79,41 @@
             <mxGeometry height="30" width="350" x="185" y="970" as="geometry" />
           </mxCell>
         </UserObject>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-258" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <UserObject label="Call cleanup_game()" id="4d2N35XxTM7zyosQTTk9-84" parent="main" shape="rectangle" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
             <mxGeometry height="30" width="130" x="295" y="1170" as="geometry" />
           </mxCell>
         </UserObject>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-259" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <UserObject label="Cancel powerup_thread with pthread_cancel" id="4d2N35XxTM7zyosQTTk9-85" parent="main" shape="rectangle" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="260" x="10" y="1210" as="geometry" />
+            <mxGeometry height="30" width="260" x="230" y="1230" as="geometry" />
           </mxCell>
         </UserObject>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-260" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <UserObject label="Join powerup_thread with pthread_join" id="4d2N35XxTM7zyosQTTk9-86" parent="main" shape="rectangle" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="230" x="10" y="1280" as="geometry" />
+            <mxGeometry height="30" width="230" x="245" y="1290" as="geometry" />
           </mxCell>
         </UserObject>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-261" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <UserObject label="Print Game simulation completed successfully" id="4d2N35XxTM7zyosQTTk9-87" parent="main" shape="rectangle" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="270" x="10" y="1350" as="geometry" />
+            <mxGeometry height="30" width="270" x="225" y="1350" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="Return 0 from main" id="4d2N35XxTM7zyosQTTk9-88" parent="main" shape="ellipse" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="130" x="10" y="1420" as="geometry" />
+            <mxGeometry height="30" width="130" x="295" y="1410" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="initialize_game(num_players)" id="4d2N35XxTM7zyosQTTk9-89" parent="main_call_init" shape="rectangle" placeholders="1">
