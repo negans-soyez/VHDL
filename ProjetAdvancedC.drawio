@@ -57,17 +57,17 @@
         </UserObject>
         <UserObject label="Set *player_id = i" id="4d2N35XxTM7zyosQTTk9-79" parent="main_loop_players" shape="rectangle" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="110" x="10" y="790" as="geometry" />
+            <mxGeometry height="30" width="110" x="305" y="860" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="Create pthread for player_movement_thread with player_id" id="4d2N35XxTM7zyosQTTk9-80" parent="main_loop_players" shape="rectangle" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="340" x="10" y="860" as="geometry" />
+            <mxGeometry height="30" width="340" x="320" y="960" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="If pthread_create failed then print error free player_id and exit" id="4d2N35XxTM7zyosQTTk9-81" parent="main_loop_players" shape="diamond" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="350" x="10" y="930" as="geometry" />
+            <mxGeometry height="30" width="350" x="340" y="1090" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="Create pthread powerup_thread for powerup_spawner_thread" id="4d2N35XxTM7zyosQTTk9-82" parent="main" shape="rectangle" placeholders="1">
@@ -799,8 +799,18 @@
         <mxCell id="4d2N35XxTM7zyosQTTk9-233" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-230" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4d2N35XxTM7zyosQTTk9-232" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-244" connectable="0" parent="4d2N35XxTM7zyosQTTk9-233" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="yes" vertex="1">
+          <mxGeometry relative="1" x="-0.48" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="4d2N35XxTM7zyosQTTk9-234" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-230" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-75">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-245" connectable="0" parent="4d2N35XxTM7zyosQTTk9-234" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="no" vertex="1">
+          <mxGeometry relative="1" x="-0.35" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="4d2N35XxTM7zyosQTTk9-230" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="Si : initialize_game returns error&amp;nbsp;" vertex="1">
           <mxGeometry height="110" width="210" x="255" y="380" as="geometry" />
@@ -810,6 +820,19 @@
         </mxCell>
         <mxCell id="4d2N35XxTM7zyosQTTk9-240" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-236" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4d2N35XxTM7zyosQTTk9-239" value="">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-242" connectable="0" parent="4d2N35XxTM7zyosQTTk9-240" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.2759" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-241" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-236" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-243" connectable="0" parent="4d2N35XxTM7zyosQTTk9-241" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.2333" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="4d2N35XxTM7zyosQTTk9-236" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" value="If malloc failed&amp;nbsp;" vertex="1">
           <mxGeometry height="110" width="250" x="235" y="720" as="geometry" />
