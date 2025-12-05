@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.4">
   <diagram name="Page-1" id="Sr3MLf4RLO3qVzRuOpbn">
-    <mxGraphModel dx="1737" dy="878" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="834" dy="422" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -36,7 +36,7 @@
         </UserObject>
         <UserObject label="%Name%" ID="move_player" Name="Move player (random direction + bounds)" Style="shape=process;" Source="player_loop" Target="check_collisions" placeholders="1" id="4d2N35XxTM7zyosQTTk9-7">
           <mxCell parent="1" style="shape=process;" vertex="1">
-            <mxGeometry height="30" width="240" x="300" y="600" as="geometry" />
+            <mxGeometry height="30" width="240" x="480" y="600" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="%Name%" ID="check_collisions" Name="Collisions (battle / power-up pickup)" Style="shape=decision;" Source="move_player" Target="update_health" placeholders="1" id="4d2N35XxTM7zyosQTTk9-8">
