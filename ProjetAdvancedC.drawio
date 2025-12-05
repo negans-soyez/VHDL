@@ -81,7 +81,7 @@
         </UserObject>
         <UserObject label="Call cleanup_game()" id="4d2N35XxTM7zyosQTTk9-84" parent="main" shape="rectangle" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="30" width="130" x="10" y="1140" as="geometry" />
+            <mxGeometry height="30" width="130" x="295" y="1170" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="Cancel powerup_thread with pthread_cancel" id="4d2N35XxTM7zyosQTTk9-85" parent="main" shape="rectangle" placeholders="1">
@@ -841,6 +841,19 @@
         </mxCell>
         <mxCell id="4d2N35XxTM7zyosQTTk9-254" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-251" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4d2N35XxTM7zyosQTTk9-253" value="">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-255" connectable="0" parent="4d2N35XxTM7zyosQTTk9-254" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="yes" vertex="1">
+          <mxGeometry relative="1" x="-0.2055" y="4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-256" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-251" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-257" connectable="0" parent="4d2N35XxTM7zyosQTTk9-256" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="no" vertex="1">
+          <mxGeometry relative="1" x="-0.2182" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="4d2N35XxTM7zyosQTTk9-251" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;If pthread_create failed&amp;nbsp;&lt;/font&gt;" vertex="1">
           <mxGeometry height="109" width="242.5" x="238.75" y="1031" as="geometry" />
