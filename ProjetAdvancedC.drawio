@@ -7,6 +7,791 @@
         <mxCell id="4d2N35XxTM7zyosQTTk9-68" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Organigramme :&amp;nbsp;&lt;/font&gt;&lt;/b&gt;" vertex="1">
           <mxGeometry height="30" width="200" x="10" y="40" as="geometry" />
         </mxCell>
+        <UserObject label="Program Start" id="4d2N35XxTM7zyosQTTk9-69" parent="" shape="ellipse" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="100" x="10" y="90" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="main() Entry Point" id="4d2N35XxTM7zyosQTTk9-70" parent="start" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="120" x="10" y="160" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Seed RNG with time(NULL)" id="4d2N35XxTM7zyosQTTk9-71" parent="main" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="170" x="10" y="230" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set num_players = 3" id="4d2N35XxTM7zyosQTTk9-72" parent="main" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="130" x="10" y="300" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Call initialize_game(num_players)" id="4d2N35XxTM7zyosQTTk9-73" parent="main" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="200" x="10" y="370" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If initialize_game returns error then exit with code 1" id="4d2N35XxTM7zyosQTTk9-74" parent="main" shape="diamond" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="290" x="10" y="440" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Call display_game_grid() and print_player_status()" id="4d2N35XxTM7zyosQTTk9-75" parent="main" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="290" x="10" y="510" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Loop i from 0 to num_players - 1" id="4d2N35XxTM7zyosQTTk9-76" parent="main" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="200" x="10" y="580" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Allocate int* player_id via malloc" id="4d2N35XxTM7zyosQTTk9-77" parent="main_loop_players" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="200" x="10" y="650" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If malloc failed then print error and exit" id="4d2N35XxTM7zyosQTTk9-78" parent="main_loop_players" shape="diamond" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="230" x="10" y="720" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set *player_id = i" id="4d2N35XxTM7zyosQTTk9-79" parent="main_loop_players" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="110" x="10" y="790" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Create pthread for player_movement_thread with player_id" id="4d2N35XxTM7zyosQTTk9-80" parent="main_loop_players" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="340" x="10" y="860" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If pthread_create failed then print error free player_id and exit" id="4d2N35XxTM7zyosQTTk9-81" parent="main_loop_players" shape="diamond" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="350" x="10" y="930" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Create pthread powerup_thread for powerup_spawner_thread" id="4d2N35XxTM7zyosQTTk9-82" parent="main" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="350" x="10" y="1000" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If powerup thread creation failed then print error and exit" id="4d2N35XxTM7zyosQTTk9-83" parent="main" shape="diamond" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="320" x="10" y="1070" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Call cleanup_game()" id="4d2N35XxTM7zyosQTTk9-84" parent="main" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="130" x="10" y="1140" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Cancel powerup_thread with pthread_cancel" id="4d2N35XxTM7zyosQTTk9-85" parent="main" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="260" x="10" y="1210" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Join powerup_thread with pthread_join" id="4d2N35XxTM7zyosQTTk9-86" parent="main" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="230" x="10" y="1280" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Print Game simulation completed successfully" id="4d2N35XxTM7zyosQTTk9-87" parent="main" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="270" x="10" y="1350" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Return 0 from main" id="4d2N35XxTM7zyosQTTk9-88" parent="main" shape="ellipse" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="130" x="10" y="1420" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="initialize_game(num_players)" id="4d2N35XxTM7zyosQTTk9-89" parent="main_call_init" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="180" x="10" y="1490" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Check if num_players is between 1 and MAX_PLAYERS" id="4d2N35XxTM7zyosQTTk9-90" parent="init" shape="diamond" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="320" x="10" y="1560" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If invalid print error and return -1" id="4d2N35XxTM7zyosQTTk9-91" parent="init" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="190" x="10" y="1630" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set game_state.num_players = num_players" id="4d2N35XxTM7zyosQTTk9-92" parent="init" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="260" x="10" y="1700" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set game_state.num_powerups = 0" id="4d2N35XxTM7zyosQTTk9-93" parent="init" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="210" x="10" y="1770" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set game_state.turn_count = 0" id="4d2N35XxTM7zyosQTTk9-94" parent="init" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="190" x="10" y="1840" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set game_state.game_over = 0" id="4d2N35XxTM7zyosQTTk9-95" parent="init" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="190" x="10" y="1910" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set game_state.last_powerup_time = time(NULL)" id="4d2N35XxTM7zyosQTTk9-96" parent="init" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="290" x="10" y="1980" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Initialize pthread_mutex game_state.grid_mutex" id="4d2N35XxTM7zyosQTTk9-97" parent="init" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="280" x="10" y="2050" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Initialize pthread_mutex game_state.powerup_mutex" id="4d2N35XxTM7zyosQTTk9-98" parent="init" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="310" x="10" y="2120" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Loop i from 0 to num_players - 1" id="4d2N35XxTM7zyosQTTk9-99" parent="init" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="200" x="10" y="2190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set players[i].id = i" id="4d2N35XxTM7zyosQTTk9-100" parent="init_players_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="120" x="10" y="2260" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set players[i].name to Player_i using snprintf" id="4d2N35XxTM7zyosQTTk9-101" parent="init_players_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="260" x="10" y="2330" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set players[i].health = INITIAL_HEALTH" id="4d2N35XxTM7zyosQTTk9-102" parent="init_players_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="240" x="10" y="2400" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set players[i].alive = 1" id="4d2N35XxTM7zyosQTTk9-103" parent="init_players_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="140" x="10" y="2470" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If i equals 0 then position (0" id="4d2N35XxTM7zyosQTTk9-104" parent="0)" shape="init_players_loop" undefined="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="170" x="10" y="2540" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If i equals 1 then position (GRID_WIDTH - 1" id="4d2N35XxTM7zyosQTTk9-105" parent="0)" shape="init_players_loop" undefined="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="260" x="10" y="2610" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If i equals 2 then position (GRID_WIDTH / 2" id="4d2N35XxTM7zyosQTTk9-106" parent=" GRID_HEIGHT / 2)" shape="init_players_loop" undefined="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="260" x="10" y="2680" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Loop i from 0 to MAX_POWERUPS - 1" id="4d2N35XxTM7zyosQTTk9-107" parent="init" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="230" x="10" y="2750" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set powerups[i].id = i" id="4d2N35XxTM7zyosQTTk9-108" parent="init_powerups_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="140" x="10" y="2820" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set powerups[i].active = 0" id="4d2N35XxTM7zyosQTTk9-109" parent="init_powerups_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="160" x="10" y="2890" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set powerups[i].health_bonus = 0" id="4d2N35XxTM7zyosQTTk9-110" parent="init_powerups_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="200" x="10" y="2960" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Print GAME INITIALIZED header with number of players and grid size" id="4d2N35XxTM7zyosQTTk9-111" parent="init" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="390" x="10" y="3030" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Return 0 from initialize_game" id="4d2N35XxTM7zyosQTTk9-112" parent="init" shape="ellipse" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="180" x="10" y="3100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="display_game_grid()" id="4d2N35XxTM7zyosQTTk9-113" parent="main_initial_display" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="130" x="10" y="3170" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Create local char grid[GRID_HEIGHT][GRID_WIDTH]" id="4d2N35XxTM7zyosQTTk9-114" parent="display" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="310" x="10" y="3240" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Loop y from 0 to GRID_HEIGHT - 1" id="4d2N35XxTM7zyosQTTk9-115" parent="display" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="210" x="10" y="3310" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="For each x from 0 to GRID_WIDTH - 1 set grid[y][x] to &#39;.&#39;" id="4d2N35XxTM7zyosQTTk9-116" parent="display_init_rows" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="320" x="10" y="3380" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Loop i from 0 to game_state.num_powerups - 1" id="4d2N35XxTM7zyosQTTk9-117" parent="display" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="280" x="10" y="3450" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If powerups[i] is active" id="4d2N35XxTM7zyosQTTk9-118" parent="display_place_powerups" shape="diamond" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="140" x="10" y="3520" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Read x and y from powerups[i].position" id="4d2N35XxTM7zyosQTTk9-119" parent="display_place_powerups" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="230" x="10" y="3590" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If is_position_valid(x" id="4d2N35XxTM7zyosQTTk9-120" parent="y) is true then set grid[y][x] to &#39;+&#39;" shape="display_place_powerups" undefined="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="130" x="10" y="3660" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Loop i from 0 to game_state.num_players - 1" id="4d2N35XxTM7zyosQTTk9-121" parent="display" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="260" x="10" y="3730" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If players[i].alive is true" id="4d2N35XxTM7zyosQTTk9-122" parent="display_place_players" shape="diamond" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="150" x="10" y="3800" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Read x and y from players[i].position" id="4d2N35XxTM7zyosQTTk9-123" parent="display_place_players" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="220" x="10" y="3870" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If is_position_valid(x" id="4d2N35XxTM7zyosQTTk9-124" parent="y) is true" shape="display_place_players" undefined="diamond" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="130" x="10" y="3940" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If grid[y][x] contains character &#39;0&#39; to &#39;9&#39; then set grid[y][x] = &#39;*&#39;" id="4d2N35XxTM7zyosQTTk9-125" parent="display_place_players" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="340" x="10" y="4010" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If grid[y][x] is &#39;+&#39; then keep &#39;+&#39;" id="4d2N35XxTM7zyosQTTk9-126" parent="display_place_players" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="180" x="10" y="4080" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Else set grid[y][x] to character &#39;0&#39; plus player id" id="4d2N35XxTM7zyosQTTk9-127" parent="display_place_players" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="270" x="10" y="4150" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Print top border with BOX drawing characters" id="4d2N35XxTM7zyosQTTk9-128" parent="display" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="260" x="10" y="4220" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Loop y from 0 to GRID_HEIGHT - 1 and print each row" id="4d2N35XxTM7zyosQTTk9-129" parent="display" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="310" x="10" y="4290" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="For each x print cell as [grid[y][x]]" id="4d2N35XxTM7zyosQTTk9-130" parent="display_print_rows" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="200" x="10" y="4360" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Print bottom border with BOX drawing characters" id="4d2N35XxTM7zyosQTTk9-131" parent="display" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="280" x="10" y="4430" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Print legend for &#39;.&#39;" id="4d2N35XxTM7zyosQTTk9-132" parent=" &#39;0-9&#39;" shape=" &#39;+&#39;" undefined="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="120" x="10" y="4500" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Print current turn count game_state.turn_count" id="4d2N35XxTM7zyosQTTk9-133" parent="display" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="270" x="10" y="4570" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Return 0 from display_game_grid" id="4d2N35XxTM7zyosQTTk9-134" parent="display" shape="ellipse" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="200" x="10" y="4640" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="print_player_status()" id="4d2N35XxTM7zyosQTTk9-135" parent="display" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="130" x="10" y="4710" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Print Player Status header" id="4d2N35XxTM7zyosQTTk9-136" parent="status" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="160" x="10" y="4780" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Loop i from 0 to game_state.num_players - 1" id="4d2N35XxTM7zyosQTTk9-137" parent="status" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="260" x="10" y="4850" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Print Player id name and health" id="4d2N35XxTM7zyosQTTk9-138" parent="status_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="190" x="10" y="4920" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If player.alive equals 0 append DEAD" id="4d2N35XxTM7zyosQTTk9-139" parent="status_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="220" x="10" y="4990" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Print Player Status footer" id="4d2N35XxTM7zyosQTTk9-140" parent="status" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="160" x="10" y="5060" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="move_player(Player*)" id="4d2N35XxTM7zyosQTTk9-141" parent="player_thread" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="140" x="10" y="5130" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If player is NULL or player.alive equals 0 then return" id="4d2N35XxTM7zyosQTTk9-142" parent="move_player" shape="diamond" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="300" x="10" y="5200" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Compute direction as rand modulo 9" id="4d2N35XxTM7zyosQTTk9-143" parent="move_player" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="220" x="10" y="5270" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Initialize new_x and new_y from player current position" id="4d2N35XxTM7zyosQTTk9-144" parent="move_player" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="310" x="10" y="5340" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Switch on direction from 0 to 8" id="4d2N35XxTM7zyosQTTk9-145" parent="move_player" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="180" x="10" y="5410" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Case 0 do not move" id="4d2N35XxTM7zyosQTTk9-146" parent="move_switch" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="130" x="10" y="5480" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Case 1 new_x minus 1 move left" id="4d2N35XxTM7zyosQTTk9-147" parent="move_switch" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="200" x="10" y="5550" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Case 2 new_x plus 1 move right" id="4d2N35XxTM7zyosQTTk9-148" parent="move_switch" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="190" x="10" y="5620" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Case 3 new_y minus 1 move up" id="4d2N35XxTM7zyosQTTk9-149" parent="move_switch" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="190" x="10" y="5690" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Case 4 new_y plus 1 move down" id="4d2N35XxTM7zyosQTTk9-150" parent="move_switch" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="200" x="10" y="5760" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Case 5 new_x minus 1 and new_y minus 1 move up left" id="4d2N35XxTM7zyosQTTk9-151" parent="move_switch" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="320" x="10" y="5830" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Case 6 new_x plus 1 and new_y minus 1 move up right" id="4d2N35XxTM7zyosQTTk9-152" parent="move_switch" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="320" x="10" y="5900" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Case 7 new_x minus 1 and new_y plus 1 move down left" id="4d2N35XxTM7zyosQTTk9-153" parent="move_switch" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="330" x="10" y="5970" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Case 8 new_x plus 1 and new_y plus 1 move down right" id="4d2N35XxTM7zyosQTTk9-154" parent="move_switch" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="320" x="10" y="6040" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If is_position_valid(new_x" id="4d2N35XxTM7zyosQTTk9-155" parent="new_y) is true then update player position" shape="move_player" undefined="diamond" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="160" x="10" y="6110" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Else keep old position unchanged" id="4d2N35XxTM7zyosQTTk9-156" parent="move_player" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="200" x="10" y="6180" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Return from move_player" id="4d2N35XxTM7zyosQTTk9-157" parent="move_player" shape="ellipse" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="160" x="10" y="6250" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="player_movement_thread(void*)" id="4d2N35XxTM7zyosQTTk9-158" parent="main_create_player_thread" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="190" x="10" y="6320" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Cast arg to int* and read player_id" id="4d2N35XxTM7zyosQTTk9-159" parent="player_thread" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="210" x="10" y="6390" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Free arg memory" id="4d2N35XxTM7zyosQTTk9-160" parent="player_thread" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="120" x="10" y="6460" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set local Player* to address of game_state.players[player_id]" id="4d2N35XxTM7zyosQTTk9-161" parent="player_thread" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="350" x="10" y="6530" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="While game_state.game_over is false and player.alive is true" id="4d2N35XxTM7zyosQTTk9-162" parent="player_thread" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="350" x="10" y="6600" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Sleep SLEEP_TIME seconds" id="4d2N35XxTM7zyosQTTk9-163" parent="player_thread_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="180" x="10" y="6670" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Lock game_state.grid_mutex" id="4d2N35XxTM7zyosQTTk9-164" parent="player_thread_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="180" x="10" y="6740" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Call move_player(player)" id="4d2N35XxTM7zyosQTTk9-165" parent="player_thread_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="160" x="10" y="6810" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Unlock game_state.grid_mutex" id="4d2N35XxTM7zyosQTTk9-166" parent="player_thread_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="190" x="10" y="6880" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Call check_collisions(player)" id="4d2N35XxTM7zyosQTTk9-167" parent="player_thread_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="170" x="10" y="6950" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Lock game_state.grid_mutex" id="4d2N35XxTM7zyosQTTk9-168" parent="player_thread_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="180" x="10" y="7020" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Call display_game_grid()" id="4d2N35XxTM7zyosQTTk9-169" parent="player_thread_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="160" x="10" y="7090" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Call print_player_status()" id="4d2N35XxTM7zyosQTTk9-170" parent="player_thread_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="160" x="10" y="7160" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Unlock game_state.grid_mutex" id="4d2N35XxTM7zyosQTTk9-171" parent="player_thread_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="190" x="10" y="7230" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Increment game_state.turn_count" id="4d2N35XxTM7zyosQTTk9-172" parent="player_thread_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="200" x="10" y="7300" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If player.health less or equal to 0 then set player.alive to 0 print defeat and set game_over to 1" id="4d2N35XxTM7zyosQTTk9-173" parent="player_thread_loop" shape="diamond" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="520" x="10" y="7370" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Call pthread_exit(NULL) when loop ends" id="4d2N35XxTM7zyosQTTk9-174" parent="player_thread" shape="ellipse" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="240" x="10" y="7440" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="spawn_powerup()" id="4d2N35XxTM7zyosQTTk9-175" parent="power_thread" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="120" x="10" y="7510" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set slot to first index where powerups[i].active is false else minus 1" id="4d2N35XxTM7zyosQTTk9-176" parent="spawn_powerup" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="380" x="10" y="7580" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If slot equals minus 1 then print WARNING and return minus 1" id="4d2N35XxTM7zyosQTTk9-177" parent="spawn_powerup" shape="diamond" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="350" x="10" y="7650" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Generate x and y randomly inside grid bounds" id="4d2N35XxTM7zyosQTTk9-178" parent="spawn_powerup" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="270" x="10" y="7720" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="While is_position_occupied_by_player(x" id="4d2N35XxTM7zyosQTTk9-179" parent="y" shape="-1) is not minus 1 regenerate x and y" undefined="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="240" x="10" y="7790" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set powerups[slot].id = slot" id="4d2N35XxTM7zyosQTTk9-180" parent="spawn_powerup" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="170" x="10" y="7860" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set powerups[slot].position.x and position.y" id="4d2N35XxTM7zyosQTTk9-181" parent="spawn_powerup" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="250" x="10" y="7930" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set powerups[slot].active = 1" id="4d2N35XxTM7zyosQTTk9-182" parent="spawn_powerup" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="180" x="10" y="8000" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set powerups[slot].health_bonus = POWERUP_HEALTH" id="4d2N35XxTM7zyosQTTk9-183" parent="spawn_powerup" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="330" x="10" y="8070" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Increment game_state.num_powerups" id="4d2N35XxTM7zyosQTTk9-184" parent="spawn_powerup" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="230" x="10" y="8140" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Print power up spawned message" id="4d2N35XxTM7zyosQTTk9-185" parent="spawn_powerup" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="200" x="10" y="8210" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Return slot index" id="4d2N35XxTM7zyosQTTk9-186" parent="spawn_powerup" shape="ellipse" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="110" x="10" y="8280" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="powerup_spawner_thread(void*)" id="4d2N35XxTM7zyosQTTk9-187" parent="main_create_power_thread" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="200" x="10" y="8350" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set game_state.last_powerup_time = time(NULL)" id="4d2N35XxTM7zyosQTTk9-188" parent="power_thread" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="290" x="10" y="8420" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="While game_state.game_over is false" id="4d2N35XxTM7zyosQTTk9-189" parent="power_thread" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="220" x="10" y="8490" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Sleep POWERUP_SPAWN_INTERVAL seconds" id="4d2N35XxTM7zyosQTTk9-190" parent="power_thread_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="280" x="10" y="8560" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Read current_time = time(NULL)" id="4d2N35XxTM7zyosQTTk9-191" parent="power_thread_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="200" x="10" y="8630" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If difftime(current_time" id="4d2N35XxTM7zyosQTTk9-192" parent="last_powerup_time) &gt;= POWERUP_SPAWN_INTERVAL" shape="power_thread_loop" undefined="diamond" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="140" x="10" y="8700" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Lock game_state.powerup_mutex" id="4d2N35XxTM7zyosQTTk9-193" parent="power_thread_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="200" x="10" y="8770" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Call spawn_powerup()" id="4d2N35XxTM7zyosQTTk9-194" parent="power_thread_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="140" x="10" y="8840" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Unlock game_state.powerup_mutex" id="4d2N35XxTM7zyosQTTk9-195" parent="power_thread_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="210" x="10" y="8910" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Set last_powerup_time = current_time" id="4d2N35XxTM7zyosQTTk9-196" parent="power_thread_loop" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="230" x="10" y="8980" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Call pthread_exit(NULL) when loop ends" id="4d2N35XxTM7zyosQTTk9-197" parent="power_thread" shape="ellipse" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="240" x="10" y="9050" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="check_collisions(Player*)" id="4d2N35XxTM7zyosQTTk9-198" parent="player_thread_check_collisions" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="160" x="10" y="9120" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If player is NULL or player.alive equals 0 then return minus 1" id="4d2N35XxTM7zyosQTTk9-199" parent="collisions" shape="diamond" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="340" x="10" y="9190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Lock game_state.grid_mutex" id="4d2N35XxTM7zyosQTTk9-200" parent="collisions" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="180" x="10" y="9260" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Call is_position_occupied_by_player at player position excluding player id" id="4d2N35XxTM7zyosQTTk9-201" parent="collisions" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="410" x="10" y="9330" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If other_player_id is not minus 1 then a battle occurs" id="4d2N35XxTM7zyosQTTk9-202" parent="collisions" shape="diamond" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="300" x="10" y="9400" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Get pointer to other player using other_player_id" id="4d2N35XxTM7zyosQTTk9-203" parent="collisions" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="280" x="10" y="9470" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Print BATTLE message with both players" id="4d2N35XxTM7zyosQTTk9-204" parent="collisions" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="240" x="10" y="9540" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Subtract BATTLE_DAMAGE from both players health" id="4d2N35XxTM7zyosQTTk9-205" parent="collisions" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="310" x="10" y="9610" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Print health of both players after damage" id="4d2N35XxTM7zyosQTTk9-206" parent="collisions" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="240" x="10" y="9680" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If player.health less or equal to 0 then set alive to 0 print defeated message and set game_over to 1" id="4d2N35XxTM7zyosQTTk9-207" parent="collisions" shape="diamond" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="550" x="10" y="9750" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If other_player.health less or equal to 0 then set alive to 0 print defeated message and set game_over to 1" id="4d2N35XxTM7zyosQTTk9-208" parent="collisions" shape="diamond" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="590" x="10" y="9820" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Call find_powerup_at_position at player position" id="4d2N35XxTM7zyosQTTk9-209" parent="collisions" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="280" x="10" y="9890" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="If powerup_id is not minus 1" id="4d2N35XxTM7zyosQTTk9-210" parent="collisions" shape="diamond" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="170" x="10" y="9960" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Get pointer to PowerUp from game_state.powerups array" id="4d2N35XxTM7zyosQTTk9-211" parent="collisions" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="330" x="10" y="10030" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Print POWER UP collected message" id="4d2N35XxTM7zyosQTTk9-212" parent="collisions" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="220" x="10" y="10100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Add powerup.health_bonus to player.health" id="4d2N35XxTM7zyosQTTk9-213" parent="collisions" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="250" x="10" y="10170" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Print new player health after bonus" id="4d2N35XxTM7zyosQTTk9-214" parent="collisions" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="210" x="10" y="10240" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Do not deactivate powerup so it remains reusable" id="4d2N35XxTM7zyosQTTk9-215" parent="collisions" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="290" x="10" y="10310" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Unlock game_state.grid_mutex" id="4d2N35XxTM7zyosQTTk9-216" parent="collisions" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="190" x="10" y="10380" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Return 0 from check_collisions" id="4d2N35XxTM7zyosQTTk9-217" parent="collisions" shape="ellipse" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="190" x="10" y="10450" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="cleanup_game()" id="4d2N35XxTM7zyosQTTk9-218" parent="main_cleanup_call" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="110" x="10" y="10520" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Loop i from 0 to game_state.num_players - 1 and join players[i].thread" id="4d2N35XxTM7zyosQTTk9-219" parent="cleanup" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="400" x="10" y="10590" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Destroy game_state.grid_mutex" id="4d2N35XxTM7zyosQTTk9-220" parent="cleanup" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="190" x="10" y="10660" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Destroy game_state.powerup_mutex" id="4d2N35XxTM7zyosQTTk9-221" parent="cleanup" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="220" x="10" y="10730" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Print GAME ENDED header" id="4d2N35XxTM7zyosQTTk9-222" parent="cleanup" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="170" x="10" y="10800" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Call print_player_status()" id="4d2N35XxTM7zyosQTTk9-223" parent="cleanup" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="160" x="10" y="10870" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Print total turns game_state.turn_count" id="4d2N35XxTM7zyosQTTk9-224" parent="cleanup" shape="rectangle" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="230" x="10" y="10940" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Return 0 from cleanup_game" id="4d2N35XxTM7zyosQTTk9-225" parent="cleanup" shape="ellipse" placeholders="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="30" width="180" x="10" y="11010" as="geometry" />
+          </mxCell>
+        </UserObject>
       </root>
     </mxGraphModel>
   </diagram>
