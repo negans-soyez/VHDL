@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.4">
   <diagram name="Page-1" id="Sr3MLf4RLO3qVzRuOpbn">
-    <mxGraphModel dx="1097" dy="555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1303" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -814,7 +814,7 @@
         <mxCell id="4d2N35XxTM7zyosQTTk9-236" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" value="If malloc failed&amp;nbsp;" vertex="1">
           <mxGeometry height="110" width="250" x="235" y="720" as="geometry" />
         </mxCell>
-        <mxCell id="4d2N35XxTM7zyosQTTk9-239" parent="1" style="whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;print error and exit&lt;/font&gt;" vertex="1">
+        <mxCell id="4d2N35XxTM7zyosQTTk9-239" parent="1" style="whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#FFFFFF;" value="&lt;font style=&quot;&quot;&gt;print error and exit&lt;/font&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="630" y="745" as="geometry" />
         </mxCell>
       </root>
