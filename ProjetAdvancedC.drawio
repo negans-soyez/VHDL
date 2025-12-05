@@ -808,8 +808,14 @@
         <mxCell id="4d2N35XxTM7zyosQTTk9-232" parent="1" style="whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="exit avec code 1" vertex="1">
           <mxGeometry height="60" width="120" x="590" y="405" as="geometry" />
         </mxCell>
-        <mxCell id="4d2N35XxTM7zyosQTTk9-236" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" value="If malloc failed then print error and exit" vertex="1">
+        <mxCell id="4d2N35XxTM7zyosQTTk9-240" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-236" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4d2N35XxTM7zyosQTTk9-239" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-236" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" value="If malloc failed&amp;nbsp;" vertex="1">
           <mxGeometry height="110" width="250" x="235" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="4d2N35XxTM7zyosQTTk9-239" parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;print error and exit&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="630" y="745" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
