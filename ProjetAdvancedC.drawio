@@ -19,7 +19,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="Mettre num_players = 3" id="4d2N35XxTM7zyosQTTk9-72" parent="main" shape="rectangle" placeholders="1">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
             <mxGeometry height="30" width="130" x="295" y="260" as="geometry" />
           </mxCell>
         </UserObject>
@@ -27,7 +27,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="Appeler initialize_game(num_players)" id="4d2N35XxTM7zyosQTTk9-73" parent="main" shape="rectangle" placeholders="1">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;" vertex="1">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
             <mxGeometry height="30" width="220" x="250" y="320" as="geometry" />
           </mxCell>
         </UserObject>
