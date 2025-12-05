@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.4">
   <diagram name="Page-1" id="Sr3MLf4RLO3qVzRuOpbn">
-    <mxGraphModel dx="1226" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3473" dy="1757" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -905,7 +905,7 @@
         </mxCell>
         <UserObject label="main() – Point d&#39;entrée" id="4d2N35XxTM7zyosQTTk9-300" parent="debut" shape="process" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="140" x="200" y="8130" as="geometry" />
+            <mxGeometry height="30" width="140" x="835" y="8035" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-325" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-301" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-302">
@@ -913,7 +913,7 @@
         </mxCell>
         <UserObject label="Initialisation du générateur aléatoire (srand)" id="4d2N35XxTM7zyosQTTk9-301" parent="main" shape="process" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="250" x="145" y="8190" as="geometry" />
+            <mxGeometry height="30" width="250" x="780" y="8095" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-326" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-302" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-303">
@@ -921,7 +921,7 @@
         </mxCell>
         <UserObject label="Définition du nombre de joueurs" id="4d2N35XxTM7zyosQTTk9-302" parent="main" shape="process" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="190" x="175" y="8260" as="geometry" />
+            <mxGeometry height="30" width="190" x="810" y="8165" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-327" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-303" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-304">
@@ -929,7 +929,7 @@
         </mxCell>
         <UserObject label="Initialiser le jeu" id="4d2N35XxTM7zyosQTTk9-303" parent="set_players" shape="process" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="100" x="220" y="8330" as="geometry" />
+            <mxGeometry height="30" width="100" x="855" y="8235" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-328" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-304" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-305">
@@ -937,7 +937,7 @@
         </mxCell>
         <UserObject label="Validation du nombre de joueurs" id="4d2N35XxTM7zyosQTTk9-304" parent="init" shape="decision" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="200" x="170" y="8390" as="geometry" />
+            <mxGeometry height="30" width="200" x="805" y="8295" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-329" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-305" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-306">
@@ -945,7 +945,7 @@
         </mxCell>
         <UserObject label="Configuration de l&#39;état du jeu (joueurs)" id="4d2N35XxTM7zyosQTTk9-305" parent=" power-ups" shape=" mutex" undefined="process" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="220" x="160" y="8460" as="geometry" />
+            <mxGeometry height="30" width="220" x="795" y="8365" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-330" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-306" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-307">
@@ -953,7 +953,7 @@
         </mxCell>
         <UserObject label="Affichage initial de la grille et de l&#39;état des joueurs" id="4d2N35XxTM7zyosQTTk9-306" parent="init_setup" shape="process" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="290" x="125" y="8530" as="geometry" />
+            <mxGeometry height="30" width="290" x="760" y="8435" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-331" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-307" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-308">
@@ -961,7 +961,7 @@
         </mxCell>
         <UserObject label="Création des threads joueurs" id="4d2N35XxTM7zyosQTTk9-307" parent="display_initial" shape="process" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="180" x="180" y="8600" as="geometry" />
+            <mxGeometry height="30" width="180" x="815" y="8505" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-332" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-308" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-309">
@@ -969,7 +969,7 @@
         </mxCell>
         <UserObject label="Création du thread générateur de power-ups" id="4d2N35XxTM7zyosQTTk9-308" parent="create_threads" shape="process" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="260" x="140" y="8670" as="geometry" />
+            <mxGeometry height="30" width="260" x="775" y="8575" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-333" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-309" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-310">
@@ -977,7 +977,7 @@
         </mxCell>
         <UserObject label="Jeu en cours (exécution parallèle des threads)" id="4d2N35XxTM7zyosQTTk9-309" parent="create_power_thread" shape="process" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="270" x="135" y="8738" as="geometry" />
+            <mxGeometry height="30" width="270" x="770" y="8643" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-334" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-310" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-311">
@@ -985,7 +985,7 @@
         </mxCell>
         <UserObject label="Thread Joueur" id="4d2N35XxTM7zyosQTTk9-310" parent="game_running" shape="process" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="100" x="220" y="8790" as="geometry" />
+            <mxGeometry height="30" width="100" x="855" y="8695" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-335" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-311" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-312">
@@ -993,7 +993,7 @@
         </mxCell>
         <UserObject label="Mouvement aléatoire du joueur" id="4d2N35XxTM7zyosQTTk9-311" parent="player_thread" shape="process" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="190" x="175" y="8850" as="geometry" />
+            <mxGeometry height="30" width="190" x="810" y="8755" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-336" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-312" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-313">
@@ -1001,7 +1001,7 @@
         </mxCell>
         <UserObject label="Vérification des collisions (joueurs / power-ups)" id="4d2N35XxTM7zyosQTTk9-312" parent="player_thread" shape="process" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="270" x="135" y="8910" as="geometry" />
+            <mxGeometry height="30" width="270" x="770" y="8815" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-337" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-313" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-314">
@@ -1009,7 +1009,7 @@
         </mxCell>
         <UserObject label="Affichage de la grille et des statuts" id="4d2N35XxTM7zyosQTTk9-313" parent="player_thread" shape="process" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="210" x="165" y="8970" as="geometry" />
+            <mxGeometry height="30" width="210" x="800" y="8875" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-338" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-314" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="4d2N35XxTM7zyosQTTk9-315">
@@ -1017,7 +1017,7 @@
         </mxCell>
         <UserObject label="Fin de vie du joueur → Game Over ?" id="4d2N35XxTM7zyosQTTk9-314" parent="player_thread" shape="decision" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1">
-            <mxGeometry height="30" width="220" x="160" y="9030" as="geometry" />
+            <mxGeometry height="30" width="220" x="795" y="8935" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-339" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-315" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-316">
@@ -1025,7 +1025,7 @@
         </mxCell>
         <UserObject label="Thread Power-Up" id="4d2N35XxTM7zyosQTTk9-315" parent="game_running" shape="process" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="120" x="210" y="9090" as="geometry" />
+            <mxGeometry height="30" width="120" x="845" y="8995" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-340" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-316" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-317">
@@ -1033,7 +1033,7 @@
         </mxCell>
         <UserObject label="Attente de l&#39;intervalle" id="4d2N35XxTM7zyosQTTk9-316" parent="power_thread" shape="process" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="130" x="205" y="9150" as="geometry" />
+            <mxGeometry height="30" width="130" x="840" y="9055" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-341" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-317" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-318">
@@ -1041,7 +1041,7 @@
         </mxCell>
         <UserObject label="Apparition d&#39;un nouveau power-up" id="4d2N35XxTM7zyosQTTk9-317" parent="power_thread" shape="process" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="210" x="165" y="9210" as="geometry" />
+            <mxGeometry height="30" width="210" x="800" y="9115" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-342" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-318" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-319">
@@ -1049,7 +1049,7 @@
         </mxCell>
         <UserObject label="Condition de fin du jeu (un joueur mort)" id="4d2N35XxTM7zyosQTTk9-318" parent="game_running" shape="decision" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1">
-            <mxGeometry height="30" width="230" x="155" y="9270" as="geometry" />
+            <mxGeometry height="30" width="230" x="790" y="9175" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-343" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-319" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-320">
@@ -1057,7 +1057,7 @@
         </mxCell>
         <UserObject label="Nettoyage du jeu" id="4d2N35XxTM7zyosQTTk9-319" parent="check_game_over" shape="process" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="110" x="215" y="9330" as="geometry" />
+            <mxGeometry height="30" width="110" x="850" y="9235" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-346" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-320" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-345">
@@ -1065,17 +1065,17 @@
         </mxCell>
         <UserObject label="Jointure des threads et destruction des mutex" id="4d2N35XxTM7zyosQTTk9-320" parent="cleanup" shape="process" placeholders="1">
           <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
-            <mxGeometry height="30" width="270" x="135" y="9390" as="geometry" />
+            <mxGeometry height="30" width="270" x="770" y="9295" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4d2N35XxTM7zyosQTTk9-323" edge="1" parent="1" source="4d2N35XxTM7zyosQTTk9-322" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4d2N35XxTM7zyosQTTk9-300">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4d2N35XxTM7zyosQTTk9-322" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="Début du programme" vertex="1">
-          <mxGeometry height="80" width="120" x="210" y="8015" as="geometry" />
+          <mxGeometry height="80" width="120" x="845" y="7920" as="geometry" />
         </mxCell>
         <mxCell id="4d2N35XxTM7zyosQTTk9-345" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="Fin du programme" vertex="1">
-          <mxGeometry height="80" width="120" x="210" y="9450" as="geometry" />
+          <mxGeometry height="80" width="120" x="845" y="9355" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
